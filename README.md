@@ -5,5 +5,7 @@
 ### [[Project Page]](https://minhmanho.github.io/deep_preset/) [[Paper]](https://arxiv.org/abs/2007.10701)
 
 Currently, I'm trying to meet several deadlines.
-So please stay tune!
+
+So please stay tuned!
+
 Thank you for your patience.
