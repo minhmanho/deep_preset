@@ -1,8 +1,7 @@
-# Deep Preset: Blending and Retouching Photos with Color Style Transfer
-#### [[Project Page]](https://minhmanho.github.io/deep_preset/) [[Paper]](https://arxiv.org/abs/2007.10701)
+# Deep Preset: Blending and Retouching Photos with Color Style Transfer (WACV'2021)
+#### [[Page]](https://minhmanho.github.io/deep_preset/) [[Paper]](https://arxiv.org/abs/2007.10701) [[SupDoc]](https://openaccess.thecvf.com/content/WACV2021/supplemental/Ho_Deep_Preset_Blending_WACV_2021_supplemental.pdf) [[SupVid]](https://drive.google.com/file/d/1hF7clPr6jitjDRBCJCiMwTlYjDEknO8P/view?usp=sharing)
 #### [Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou)
 ![Alt Text](https://raw.githubusercontent.com/minhmanho/deep_preset/master/docs/images/intro_1.gif)
-(To appear in WACV, 2021)
 
 ## Prerequisites
 - Ubuntu 16.04
@@ -75,11 +74,13 @@ Photos were taken by _Do Khang_ (taking the subject in the top-left one) and the
 ## Citation
 If you find this work useful, please consider citing:
 ```
-@article{ho2020deep,
-title={Deep Preset: Blending and Retouching Photos with Color Style Transfer},
-author={Ho, Man M, and Zhou, Jinjia},
-journal={arXiv preprint arXiv:2007.10701},
-year={2020}
+@InProceedings{Ho_2021_WACV,
+    author    = {Ho, Man M. and Zhou, Jinjia},
+    title     = {Deep Preset: Blending and Retouching Photos With Color Style Transfer},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2021},
+    pages     = {2113-2121}
 }
 ```
 
