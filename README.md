@@ -1,5 +1,5 @@
 # Deep Preset: Blending and Retouching Photos with Color Style Transfer (WACV'2021)
-#### [[Page]](https://minhmanho.github.io/deep_preset/) [[Paper]](https://arxiv.org/abs/2007.10701) [[SupDoc]](https://openaccess.thecvf.com/content/WACV2021/supplemental/Ho_Deep_Preset_Blending_WACV_2021_supplemental.pdf) [[SupVid]](https://drive.google.com/file/d/1hF7clPr6jitjDRBCJCiMwTlYjDEknO8P/view?usp=sharing)
+#### [[Page]](https://minhmanho.github.io/deep_preset/) [[Paper]](https://arxiv.org/abs/2007.10701) [[SupDoc]](https://openaccess.thecvf.com/content/WACV2021/supplemental/Ho_Deep_Preset_Blending_WACV_2021_supplemental.pdf) [[SupVid]](https://drive.google.com/file/d/1hF7clPr6jitjDRBCJCiMwTlYjDEknO8P/view?usp=sharing) [[5-min Presentation]](https://drive.google.com/file/d/1WHt3rPXd-FiUOj_Xnb7tQnQJoXAQY9zz/view?usp=sharing) [[Slides]](https://drive.google.com/file/d/1B4aaP-EWIC5zkd35yw-VXiSlWgkJ87o-/view?usp=sharing)
 #### [Man M. Ho](https://minhmanho.github.io/), [Jinjia Zhou](https://www.zhou-lab.info/jinjia-zhou)
 ![Alt Text](https://raw.githubusercontent.com/minhmanho/deep_preset/master/docs/images/intro_1.gif)
 
