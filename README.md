@@ -71,6 +71,45 @@ After processing, the predicted preset will be stored as a JSON file revealing h
 ![Alt Text](https://minhmanho.github.io/deep_preset/images/cp.jpg)
 Photos were taken by _Do Khang_ (taking the subject in the top-left one) and the first author (others).
 
+## Regarding training data
+I planned to share the dataset and Lightroom Add-ons publicly.
+However, I don't have much time for it these days.
+Uploading the whole dataset is inefficient since it is about **~500GB**.
+You can download the training images with natural colors labeled as "0" at this [Google Drive](https://drive.google.com/file/d/1Lj_LIFNGCn5EqpE56peppGH4SKLb3fqL/view?usp=sharing)
+Afterward, you will need to script Lightroom (or create a Plugin/Add-ons) to generate other styles.
+
+*(You can refer to these ugly lines of code)*
+```
+local catalog = LrApplication.activeCatalog()
+local photos = catalog:getTargetPhotos()
+local catalog_folder = LrPathUtils.parent(catalog:getPath())
+
+pfolder = "<folder containing json presets>"
+outfolder = "<out folder>"
+for i=1,500,1 do
+    pdir = pfolder .. tostring(i) .. ".json"
+    local file = io.open(pdir, 'r')
+    if file then
+        local contents = file:read( "*a" )
+        p = json.decode(contents);
+        io.close( file )
+    else
+        p = nil
+    end
+
+    for j, photo in ipairs(photos) do
+        catalog:withWriteAccessDo ("Apply preset", function()
+            local tmp = LrApplication.addDevelopPresetForPlugin( _PLUGIN, "Preset " .. tostring(i), p)
+            photo:applyDevelopPreset (tmp, _PLUGIN)
+        end)
+    end
+    local _out = outfolder .. tostring(i)
+    LrFileUtils.createDirectory(_out)
+    exportImage.exportPhotos(photos, _out)
+```
+
+Please check [Adobe Lightroom software development kit (SDK)](https://www.adobe.io/lightroom-classic/) for more details.
+
 ## Citation
 If you find this work useful, please consider citing:
 ```
