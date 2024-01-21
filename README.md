@@ -110,6 +110,9 @@ for i=1,500,1 do
 
 Please check [Adobe Lightroom software development kit (SDK)](https://www.adobe.io/lightroom-classic/) for more details.
 
+## Regarding the training code
+(Updated 01/20/2024) In the past, I refrained from sharing training codes due to their associated costs. However, in response to the growing interest in the training code for this project, you can find the code [here](https://drive.google.com/file/d/1VIZ0ax67HEvOYTtFKdXcDxZWmIzf6g_V/view?usp=sharing). Please note that it is not executable, as I have removed certain personal information and haven't verified it again.
+
 ## Citation
 If you find this work useful, please consider citing:
 ```
